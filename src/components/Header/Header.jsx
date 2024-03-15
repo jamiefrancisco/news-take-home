@@ -7,13 +7,11 @@ function Header() {
   return (
     <header className="header">
       <div className="left-side-header">
+        <Link to="/" className= "home-title-link">
       <h1>DUBS NEWS</h1>
+      </Link>
       <h3>Your home for all Golden State Warriors news</h3>
       </div>
-      {/* <Link to="/" className="home-title-link">
-    <h1 className="home-title">DubsNews</h1>
-  </Link> */}
-
       <div className="right-side-header"></div>
     </header>
   )

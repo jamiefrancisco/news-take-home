@@ -1,3 +1,5 @@
+import { v4 as uuidv4 } from 'uuid';
+
 
 export function sortArticlesByDate(articles) {
 return articles.sort((a, b) => {
@@ -21,3 +23,16 @@ export function formatDate(dateString) {
   })}`;
   return formattedDate;
  }
+
+
+function createSlug(title) {
+ return title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
+}
+
+export function addIdsAndSlugsToArticles(articles) {
+ return articles.map(article => ({
+    ...article,
+    id: uuidv4(), // Generate a unique ID for each article
+    slug: createSlug(article.title), // Add a slug to each article
+ }));
+}

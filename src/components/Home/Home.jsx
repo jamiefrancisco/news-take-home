@@ -6,7 +6,6 @@ function Home({ articleData }) {
 
   return (
     <>
-      <Header />
       <main className="home-container">
         <ArticleList articleData={articleData} />
       </main>

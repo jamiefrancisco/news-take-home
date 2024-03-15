@@ -1,20 +1,24 @@
+import { Link } from 'react-router-dom';
 import { formatDate } from "../../util";
-
-
+import Header from '../Header/Header';
 
 function ArticleCard({ article }) {
-
   const formattedDate = formatDate(article.publishedAt);
-  
+
   return (
-    <div className="article-card">
+    <Link to={`/article/${article.slug}`} className="article-card">
       <img src={article.urlToImage} alt={article.title} />
       <h1>{article.title}</h1>
-      <h2>{article.description}</h2>
-      <h3>{formattedDate}</h3>
+      <p>{article.description}</p>
+      <p>{formattedDate}</p>
+      <p>
+        {article.author ? `${article.author}` : ''}
+        {article.author ? ' • ' : ''}
+        {article.source.name ? `${article.source.name}` : ''}
+      </p>
 
-    </div>
- );
+    </Link>
+  );
 }
 
 export default ArticleCard;

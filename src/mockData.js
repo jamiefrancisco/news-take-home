@@ -1,4 +1,4 @@
-const articleData = [
+ const articleData = [
 
       {
           "source": {
