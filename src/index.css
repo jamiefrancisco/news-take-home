@@ -23,6 +23,7 @@
   background-color: var(--secondary-color);
   padding: 10px 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  height: 60px;
  }
  
  .header h1 {
@@ -74,4 +75,21 @@
  
  .article-card h1 {
   text-align: center;
+ }
+ 
+ .article-view {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 150px;
+  padding: none;
+ }
+
+ .article-title {
+font-size: 4em;
+padding: none;
+ }
+
+ .article-image {
+  width: 80%;
  }

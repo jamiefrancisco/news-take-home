@@ -1,7 +1,8 @@
 import './App.css';
 import '../../index.css';
 import mockData from "../../mockData";
-import { sortArticlesByDate, addIdsAndSlugsToArticles } from '../../util.js';
+import { addIdsAndSlugsToArticles } from '../../util/addIdsAndSlugsToArticles.js';
+import { sortArticlesByDate } from '../../util/sortArticlesByDate.js';
 import Header from '../Header/Header.jsx';
 import Home from '../Home/Home.jsx';
 import ArticleView from '../ArticleView/ArticleView.jsx';
