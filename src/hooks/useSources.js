@@ -8,8 +8,7 @@ const sourceList = [
  'Fox Sports',
  'Time',
  'Forbes',
- 'Los Angeles Times',
- 'Yahoo Entertainment'
+ 'Los Angeles Times'
 ];
 
 export function useSources() {

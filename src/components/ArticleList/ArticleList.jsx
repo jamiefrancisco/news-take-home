@@ -21,8 +21,11 @@ function ArticleList({ articleData }) {
  }, [articleData]);
 
  return (
+  <div className='article-list-container'>
+    <div className='filter-by-source-wrapper'>
+      <FilterBySource onFilterChange={handleFilterChange} />
+    </div>
     <div className='article-cards'>
-      <FilterBySource onFilterChange={handleFilterChange} /> 
       {filteredArticles.map((article, index) => (
         <ArticleCard
           key={index}
@@ -30,7 +33,8 @@ function ArticleList({ articleData }) {
         />
       ))}
     </div>
- );
+  </div>
+);
 }
 
 export default ArticleList;

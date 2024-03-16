@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { useSources } from '../../hooks/useSources.js';
 
 function FilterBySource({ onFilterChange }) {

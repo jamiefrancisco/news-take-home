@@ -5,9 +5,9 @@ function ArticleCard({ article }) {
   const formattedDate = formatDate(article.publishedAt);
 
   return (
-    <Link to={`/article/${article.slug}`} className="article-card">
+    <Link to={`/article/${article.slug}`} className="article-card" style={{ textDecoration: 'none' }}>
+      <h2 className="article-card-title">{article.title}</h2>
       <img className="article-card-image" src={article.urlToImage} alt={article.title} />
-      <h1 className="article-card-title">{article.title}</h1>
       <p className="article-card-description">{article.description}</p>
       <p className="article-card-date">{formattedDate}</p>
       <p className="article-card-author-source">
