@@ -1,8 +1,27 @@
-# React + Vite
+# DubsNews
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
 
-Currently, two official plugins are available:
+DubsNews is a simple news aggregation site leveraging https://newsapi.org/. The Golden State Warriors fanatic is able to browse current and past news articles on their favorite team. They can also click into the individual articles for a more detailed view and be taken to the original source. The user also has ability to filter in/out different media sources.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+## Installation
+### In your terminal...
+#### Clone the project in your terminal.
+`git clone git@github.com:jamiefrancisco/news-take-home.git`
+#### Navigate to the project directory.
+ `cd news-take-home`
+#### Install dependencies
+`npm i`
+#### Start your app!
+`npm run dev`
+
+## Technologies
+- ReactJS
+- NewsAPI
+- CSS
+- Cypress (To be added)
+
+## Contributors
+- Jamie Francisco [github](https://github.com/jamiefrancisco) | <0jamiefrancisco@gmail.com> 
+
